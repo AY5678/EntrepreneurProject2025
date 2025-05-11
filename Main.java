@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("whattf");
         GachaSystem gs = new GachaSystem();
-        User user = new User("bob");
+        User user = new User("Bob");
         HomeworkSystem hs = new HomeworkSystem(user);
 
         hs.completeHomework();
 
-        if (User.spendPoints())
-            GachaSystem.draw();
+        if (user.spendPoints(10))
+            gs.draw();
     }
 }
