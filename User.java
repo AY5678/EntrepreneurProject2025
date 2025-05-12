@@ -38,7 +38,6 @@ public class User {
             PrintWriter writer = new PrintWriter(new FileOutputStream(file, true));
             writer.println(username + ";" + password);
             writer.close();
-            System.out.println("File  exist.");
         } catch (Exception e) {
             System.out.println("File does not exist.");
         }
