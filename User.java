@@ -33,7 +33,7 @@ public class User {
         this.username = username;
         this.password = password;
 
-        File file = new File("src/main/users.txt");
+        File file = new File("users.txt");
         try {
             PrintWriter writer = new PrintWriter(new FileOutputStream(file, true));
             writer.println(username + ";" + password);
@@ -54,7 +54,7 @@ public class User {
 
         input.close();
 
-        File file = new File("src/main/users.txt");
+        File file = new File("users.txt");
         try {
             Scanner reader = new Scanner(file);
             while (reader.hasNextLine()) {
